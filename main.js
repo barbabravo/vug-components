@@ -1,8 +1,12 @@
 var components = {
+/* layout components */
+	qNav: require('./components/q-nav.vue'),
+
+/* functional components */
     qAlert:require('./components/q-alert.js'),
     qConfirm:require('./components/q-confirm.js'),
     qTip:require('./components/q-tip.js'),
-
+    
     qDatetimepicker: require('./components/q-datetimepicker.vue'),
     qModal: require('./components/q-modal.vue'),
     qPage: require('./components/q-page.vue'),

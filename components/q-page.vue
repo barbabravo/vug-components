@@ -1,10 +1,10 @@
 <template>
   <div class="page-prefix">
     <slot name="page-prefix"></slot>
-  <div>
+  </div>
   <ul class="pagination pagination-sm" v-show="total_page>1">
     <li v-if="page!=1">
-      <a @click="changePageTo(1)" aria-label="Previous">
+      <a href="javascript:;" @click="changePageTo(1)" aria-label="Previous">
       <span aria-hidden="true">首页</span>
       </a>
     </li>
@@ -14,19 +14,19 @@
       </a>
     </li>
     <li v-for="p in total_page" :class="{active:p+1==page}">
-      <template v-if="page-6<p&&page+4>p">
-        <a @click="changePageTo(p+1)">
+      <template v-if="page-6<p && page+4>p">
+        <a href="javascript:;" @click="changePageTo(p+1)">
         <span>{{p+1}}</span>
         </a>
       </template>
     </li>
     <li :class="{disabled:(page==total_page || page==total_page-4)}">
-      <a @click="changePageTo(page<=total_page-4?page+5:page+1)" aria-label="Next">
+      <a href="javascript:;" @click="changePageTo(page<=total_page-4?page+5:page+1)" aria-label="Next">
       <span aria-hidden="true">»</span>
       </a>
     </li>
     <li v-if="page<total_page">
-      <a @click="changePageTo(total_page)" aria-label="Next">
+      <a href="javascript:;" @click="changePageTo(total_page)" aria-label="Next">
       <span aria-hidden="true">尾页</span>
       </a>
     </li>
