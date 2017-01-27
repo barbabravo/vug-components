@@ -12,7 +12,7 @@ export default {
   props: {
     is_show: Boolean,
     modal_info: Object,
-    style:Object
+    style:String
   },
   watch: {
     is_show: function(val, oldVal) {

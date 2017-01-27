@@ -1,6 +1,6 @@
 <template>
-<div class="q-datetimepicker" :data-cache-id="cache_id">
-    <input class="q-input" type="text" :value="model" @click="toggleBox($event)" :placeholder="placeholder" :disabled="disabled" readonly="readonly"><span class="q-icon glyphicon glyphicon-calendar"></span>
+<div class="q-datepicker" :data-cache-id="cache_id">
+    <input class="q-input" :name="name" type="text" :value="model" @click="toggleBox($event)" :placeholder="placeholder" :disabled="disabled" readonly="readonly"><span class="q-icon glyphicon glyphicon-calendar"></span>
     <div class="q-box" v-show="show_box==true">
         <div class="q-box-detail">
             <table class="q-box-calendar">
@@ -30,9 +30,6 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- <div class="q-box-time">
-                <input type="text" value="10:33:22">
-            </div> -->
         </div>
     </div>
 </div>
@@ -47,6 +44,10 @@ export default {
         "model":{
             type:String,
             default:(new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate())
+        },
+        "name":{
+            type:String,
+            default:''
         },
         "format":{
             type:String,
@@ -69,11 +70,27 @@ export default {
     },
     created(){
         var self = this;
+        var isParent = function(el, selector, filter){
+            var flag = false;
+            var matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchSelector || el.msMatchesSelector;
+
+
+            while(el){
+                if(matchesSelector.call(el, selector)){
+                    flag = true;
+                    break;
+                }
+                el = el.parentElement;
+            }
+
+            return flag;
+        }
         var monitor = function(e){
-            var root_node = document.querySelector(".q-datetimepicker[data-cache-id='" + self.cache_id + "']");
-            // if(root_node && e.target.parentNode != root_node.querySelector('.q-box-calendar')){
-            //     self.show_box = false;
-            // }
+            var selector = ".q-datepicker[data-cache-id='" + self.cache_id + "']";
+            var root_node = document.querySelector(selector);
+            if(root_node && !isParent(e.target, selector)){
+                self.show_box = false;
+            }
         }
 
         if(document.addEventListener){
@@ -182,7 +199,7 @@ export default {
         toggleBox: function(e){
             this.show_box = !this.show_box;
             if(this.show_box){
-                if(this.modal){
+                if(this.model){
                     this.date = new Date(this.model);
                 }else{
                     this.date = new Date();
@@ -248,7 +265,7 @@ export default {
 
 
 <style lang="less" scoped>
-.q-datetimepicker{
+.q-datepicker{
     position:relative;
     .q-input{
         box-sizing:border-box;

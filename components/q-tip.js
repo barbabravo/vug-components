@@ -7,7 +7,7 @@ var css = [
 		'width: 100%;',
 		'text-align: center;',
 		'display: none;',
-		'z-index: 999;',
+		'z-index: 9999;',
 		'opacity: 0;',
 	    '-webkit-transform:scale(0.1,1);',
 	    '-moz-transform:scale(0.1,1);',
