@@ -1,87 +1,15 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "vug-components@git+https://github.com/bluers/vug-components.git",
-        "scope": null,
-        "escapedName": "vug-components",
-        "name": "vug-components",
-        "rawSpec": "git+https://github.com/bluers/vug-components.git",
-        "spec": "https://github.com/bluers/vug-components.git",
-        "type": "git"
-      }
-    ]
-  ],
-  "_from": "git+https://github.com/bluers/vug-components.git",
-  "_id": "vug-components@1.0.0",
-  "_inCache": true,
-  "_location": "/vug-components",
-  "_phantomChildren": {
-    "envify": "3.4.1"
-  },
-  "_requested": {
-    "raw": "vug-components@git+https://github.com/bluers/vug-components.git",
-    "scope": null,
-    "escapedName": "vug-components",
-    "name": "vug-components",
-    "rawSpec": "git+https://github.com/bluers/vug-components.git",
-    "spec": "https://github.com/bluers/vug-components.git",
-    "type": "git"
-  },
-  "_requiredBy": [
-    "/vug-template",
-    "/vug-template/vug-utils"
-  ],
-  "_resolved": "git+https://github.com/bluers/vug-components.git#b65d15e2f2e86faaac1cfaf915e38149f4cd794c",
-  "_shasum": "251018957e3df2ef61a79016f7d2c81a304a3839",
-  "_shrinkwrap": null,
-  "_spec": "vug-components@git+https://github.com/bluers/vug-components.git",
-  "_where": "/Users/bluers/git/fed/abc/fe/node_modules/vug-template",
-  "author": "",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "description": "``` npm install && npm start ```",
-  "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0",
-    "lodash": "^4.14.1",
-    "babel-core": "^6.9.0",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-transform-runtime": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
-    "css-loader": "^0.23.1",
-    "cz-conventional-changelog": "^1.1.6",
-    "file-loader": "^0.9.0",
-    "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.21.0",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "vug-utils": "git+https://github.com/bluers/vug-utils.git",
-    "style-loader": "^0.13.1",
-    "vue": "^1.0.25",
-    "vue-hot-reload-api": "^1.3.3",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^8.5.3",
-    "vue-router": "^0.7.13",
-    "vue-style-loader": "^1.0.0"
-  },
-  "license": "ISC",
-  "main": "main.js",
   "name": "vug-components",
-  "optionalDependencies": {},
-  "readme": "# 查看demo\n```\nnpm install && npm start\n```",
-  "readmeFilename": "README.md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bluers/vug-components.git"
   },
-  "scripts": {
-    "build": "webpack --production",
-    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 9999",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.0"
+  "author": "",
+  "license": "ISC"
 }
