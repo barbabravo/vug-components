@@ -2,41 +2,41 @@
   "_args": [
     [
       {
-        "raw": "qbs-components@git+ssh://git@git.2b6.me:qbs/qbs-components.git",
+        "raw": "vug-components@git+https://github.com/bluers/vug-components.git",
         "scope": null,
-        "escapedName": "qbs-components",
-        "name": "qbs-components",
-        "rawSpec": "git+ssh://git@git.2b6.me:qbs/qbs-components.git",
-        "spec": "ssh://git@git.2b6.me:qbs/qbs-components.git",
+        "escapedName": "vug-components",
+        "name": "vug-components",
+        "rawSpec": "git+https://github.com/bluers/vug-components.git",
+        "spec": "https://github.com/bluers/vug-components.git",
         "type": "git"
       }
     ]
   ],
-  "_from": "git+ssh://git@git.2b6.me:qbs/qbs-components.git",
-  "_id": "qbs-components@1.0.0",
+  "_from": "git+https://github.com/bluers/vug-components.git",
+  "_id": "vug-components@1.0.0",
   "_inCache": true,
-  "_location": "/qbs-components",
+  "_location": "/vug-components",
   "_phantomChildren": {
     "envify": "3.4.1"
   },
   "_requested": {
-    "raw": "qbs-components@git+ssh://git@git.2b6.me:qbs/qbs-components.git",
+    "raw": "vug-components@git+https://github.com/bluers/vug-components.git",
     "scope": null,
-    "escapedName": "qbs-components",
-    "name": "qbs-components",
-    "rawSpec": "git+ssh://git@git.2b6.me:qbs/qbs-components.git",
-    "spec": "ssh://git@git.2b6.me:qbs/qbs-components.git",
+    "escapedName": "vug-components",
+    "name": "vug-components",
+    "rawSpec": "git+https://github.com/bluers/vug-components.git",
+    "spec": "https://github.com/bluers/vug-components.git",
     "type": "git"
   },
   "_requiredBy": [
-    "/qbs-template",
-    "/qbs-template/qbs-utils"
+    "/vug-template",
+    "/vug-template/vug-utils"
   ],
-  "_resolved": "git+ssh://git@git.2b6.me:qbs/qbs-components.git#b65d15e2f2e86faaac1cfaf915e38149f4cd794c",
+  "_resolved": "git+https://github.com/bluers/vug-components.git#b65d15e2f2e86faaac1cfaf915e38149f4cd794c",
   "_shasum": "251018957e3df2ef61a79016f7d2c81a304a3839",
   "_shrinkwrap": null,
-  "_spec": "qbs-components@git+ssh://git@git.2b6.me:qbs/qbs-components.git",
-  "_where": "/Users/bluers/git/fed/abc/fe/node_modules/qbs-template",
+  "_spec": "vug-components@git+https://github.com/bluers/vug-components.git",
+  "_where": "/Users/bluers/git/fed/abc/fe/node_modules/vug-template",
   "author": "",
   "config": {
     "commitizen": {
@@ -59,7 +59,7 @@
     "html-webpack-plugin": "^2.21.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "qbs-utils": "git+ssh://git@git.2b6.me:qbs/qbs-utils.git",
+    "vug-utils": "git+https://github.com/bluers/vug-utils.git",
     "style-loader": "^0.13.1",
     "vue": "^1.0.25",
     "vue-hot-reload-api": "^1.3.3",
@@ -68,16 +68,15 @@
     "vue-router": "^0.7.13",
     "vue-style-loader": "^1.0.0"
   },
-  "gitHead": "b65d15e2f2e86faaac1cfaf915e38149f4cd794c",
   "license": "ISC",
   "main": "main.js",
-  "name": "qbs-components",
+  "name": "vug-components",
   "optionalDependencies": {},
   "readme": "# 查看demo\n```\nnpm install && npm start\n```",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git@git.2b6.me:qbs/qbs-components.git"
+    "url": "https://github.com/bluers/vug-components.git"
   },
   "scripts": {
     "build": "webpack --production",
