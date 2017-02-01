@@ -11,8 +11,7 @@ var components = {
     qDatepicker: require('./components/q-datepicker.vue'),
     qModal: require('./components/q-modal.vue'),
     qPage: require('./components/q-page.vue'),
-    qSelect: require('./components/q-select.vue'),
-    qUploadfile:require('./components/q-uploadfile.vue'),
+    qSelect: require('./components/q-select.vue')
 }
 
 module.exports = components
