@@ -37,7 +37,6 @@
 
 
 <script>
-import utils from 'qbs-utils';
 
 export default {
     props:{
