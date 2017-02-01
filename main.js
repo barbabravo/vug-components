@@ -1,7 +1,4 @@
 var components = {
-/* layout components */
-	qNav: require('./components/q-nav.vue'),
-
 /* functional components */
     qAlert:require('./components/q-alert.js'),
     qConfirm:require('./components/q-confirm.js'),
